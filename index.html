@@ -3,9 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>GitHub-clone</title>
   </head>
   <body>
-    <srcipt src="src"></srcipt>
+    <!-- Header section -->
+    <header class="header-style">
+      <!-- Gitlogo -->
+      <img src="assets/img/GitHub.png" alt="github logo" class="logo" />
+      <!-- Search bar -->
+      <form>
+        <input class="search" name="search" type="text" />
+      </form>
+      <!-- Main navigation -->
+      <nav>
+        <a href="#">Pull request</a>
+        <a href="#">Issues</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Explore</a>
+      </nav>
+      <!-- Header icons -->
+      <div>
+        <div>icon 1</div>
+        <div>icon 2</div>
+        <div>icon 3</div>
+      </div>
+    </header>
+
+    <section class="content-wrapper">
+    <!-- Main body section -->
+    <main class="main-section">
+      <!-- my profile -->
+      <section class="profile-section">
+        <!-- profile picture -->
+        <div class="profile-container">
+          <div class="profile-image-container">
+            <img
+          src="assets/img/GitHub.png"
+          alt="abimbola's picture"
+          class="profile-img"
+        />
+          </div>
+        
+        <!-- Status div | focusing div -->
+        <div >
+          <img src="assets/img/GitHub.png" alt="github logo" class="logo" />
+          <p>focusing</p>
+        </div>
+      </div>
+        <!-- Name -->
+        <h1>Olayemi Abimbola</h1>
+        <!-- User Name -->
+        <p>AbimbolaOO</p>
+        <!-- Description -->
+        <p>
+          Machine Learning Engineer | Deep Learning Engineer | Data Scientist |
+          Data Analyst
+        </p>
+        <button>Edit profile</button>
+        <div>
+          <a>3 followers </a>
+          <a>0 following </a>
+          <a>140 star </a>
+        </div>
+        <!-- Contact list -->
+        <li>
+          <!-- Location -->
+          <li><a>Lagos, Nigeria</a></li>
+          <!-- Twitter handle -->
+          <li><a>@Abimbola_whyte</a></li>
+        </li>
+      </section>
+
+      <!-- Main github contents and Repositories -->
+      <section class="git-content">
+        <!-- Repository navigation -->
+        <nav class="repo-nav">
+          <a>Overview</a>
+          <a>Repositories</a>
+          <a>Projects</a>
+          <a>Packages</a>
+        </nav>
+        <hr class="spaning-line" />
+        <!-- Repository search bar sextion -->
+        <section class="repo-search">
+          <!-- Search bar -->
+          <input
+            type="text"
+            class="my-repo-search-text"
+            name="myRepoSearchText"
+          />
+          <!-- buttons -->
+          <button>Type: All</button>
+          <button>Language: All</button>
+          <button>New</button>
+        </section>
+        <!-- Repositories list section -->
+        <ul>
+          <li>
+            <!-- Repository tile -->
+            <section class="repo-tile">
+              <div class="repo-meta-data">
+              <a><h2>Ml-school</h2></a>
+              <p>
+                A global online platform were people can learn about machine learning. A platform where any can contribute to the development of
+            others.
+              </p>
+              <!-- Repo info div -->
+              <div>
+                <ul>
+                  <li>TypeScript</li>
+                  <li>GNU General Public License v2.0</li>
+                  <li>Updated 5 days ago</li>
+                </ul>
+              </div>
+            </div>
+            <div class="star-and-activity">
+              <!-- Star button -->
+              <button>stat</button>
+              <!-- Activity img -->
+              <img src="assets/img/GitHub.png" alt="github logo" class="logo" />
+            </div>
+          </section>
+            
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer-style">
+      <img src="assets/img/GitHub.png" alt="github logo" class="logo footer-icon" />
+      <ul class="footer-list">
+        <li>&copy; 2020 GitHub, Inc.</li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">Status</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Contact GitHub</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">Training</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </footer>
+  </section>
+    <script src="src/index.js"></script>
   </body>
 </html>

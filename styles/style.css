@@ -1,0 +1,6 @@
+/* Import of all css file */
+@import "css/resets.css";
+@import "css/header.css";
+@import "css/main-body.css";
+@import "css/footer.css";
+@import "css/images.css";
