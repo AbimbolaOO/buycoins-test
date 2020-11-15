@@ -1,0 +1,63 @@
+.content-wrapper {
+  padding: 16px 32px 40px;
+  margin: 0 34px;
+}
+
+.main-section {
+  display: flex;
+  /* border: 2px solid rebeccapurple; */
+  justify-content: space-around;
+}
+
+/* main github content styles */
+.git-content {
+  /* border: 2px solid rgb(139, 114, 250); */
+  flex: 3;
+  padding: 0 16px;
+}
+
+/* Repo Nav styles */
+.repo-nav {
+  display: flex;
+}
+
+.repo-nav a {
+  padding: 8px 16px;
+  /* border: 2px solid salmon; */
+}
+
+/* Repo repo-search style */
+.repo-search {
+  padding: 16px 0;
+  border-bottom: 1px solid gray;
+}
+
+/* spannng horizontal line */
+hr.spaning-line {
+  /* border: 5px solid yellow; */
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+/* github repository metadata tile */
+.repo-tile {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-bottom: 1px solid gray;
+}
+
+.repo-meta-data {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid saddlebrown;
+  flex-basis: 60%;
+}
+
+.star-and-activity {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid royalblue;
+  flex-basis: 25%;
+}

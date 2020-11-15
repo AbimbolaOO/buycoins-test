@@ -1,0 +1,22 @@
+.footer-style {
+  display: flex;
+  border-top: 1px solid gray;
+  padding: 40px 0 8px 0;
+  margin: 40px 0 0 0;
+}
+
+.footer-list {
+  display: flex;
+  /* border: 2px solid magenta; */
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* text-align: center;
+  align-content: center; */
+}
+
+.footer-list li {
+  /* border: 2px solid red; */
+  display: flex;
+}
