@@ -16,16 +16,6 @@
   padding: 0 16px;
 }
 
-/* Repo Nav styles */
-.repo-nav {
-  display: flex;
-}
-
-.repo-nav a {
-  padding: 8px 16px;
-  /* border: 2px solid salmon; */
-}
-
 /* Repo repo-search style */
 .repo-search {
   padding: 16px 0;
