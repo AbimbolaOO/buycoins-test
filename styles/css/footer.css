@@ -2,21 +2,44 @@
   display: flex;
   border-top: 1px solid gray;
   padding: 40px 0 8px 0;
-  margin: 40px 0 0 0;
+  margin: 40px 4%;
+  font-size: 12px;
 }
 
 .footer-list {
   display: flex;
   /* border: 2px solid magenta; */
   flex: 1;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   /* text-align: center;
   align-content: center; */
 }
 
+.footer-icon {
+  margin-right: 2%;
+}
+
 .footer-list li {
   /* border: 2px solid red; */
   display: flex;
+  padding-right: 5.2%;
+}
+
+.footer-list li > a {
+  color: rgb(108, 108, 255);
+}
+.footer-list li > a:hover {
+  text-decoration: underline;
+}
+
+.footer-list li:last-of-type {
+  padding-right: 0;
+}
+
+@media only screen and (max-width: 1011px) {
+  .footer-icon {
+    visibility: hidden;
+  }
 }
