@@ -1,18 +1,27 @@
-/* Repo repo-search style */
-.repo-search {
-  padding: 16px 0;
+.repo-search-container {
+  padding: 16px 0 0 0;
   display: flex;
-  border-bottom: 1px solid gray;
-  /* justify-content: space-between; */
-  /* border: 2px solid gold; */
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgb(224, 224, 224);
 }
 
-.repo-search input {
-  max-width: 542px;
-  flex: 3;
+.repo-search-container input[type="text"]:focus {
+  border: 1px solid blue;
+  box-shadow: 0 0 1px 3px rgb(183, 217, 255);
 }
 
-.repo-search > * {
+.repo-search-container button {
+  background-color: #fafbfc;
+}
+
+.repo-search-container button:last-child {
+  margin-right: 0;
+  margin-left: auto;
+  background-color: #2ea44f;
+  color: #fff;
+}
+
+.repo-search-container > * {
   margin-right: 14px;
   padding: 4px 12px;
   border-radius: 4px;
@@ -21,13 +30,23 @@
   outline: none;
 }
 
-.repo-search input[type="text"]:focus {
-  border: 1px solid blue;
-  box-shadow: 0 0 1px 3px rgb(183, 217, 255);
+@media only screen and (max-width: 768px) {
+  .repo-search-container > * {
+    margin-bottom: 16px;
+  }
+
+  .repo-search-container input[type="text"] {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
-.repo-search button:last-child {
-  margin-right: 0;
-  background-color: #2ea44f;
-  color: #fff;
+@media only screen and (min-width: 768px) {
+  .repo-search-container {
+    padding: 16px 0;
+  }
+  .repo-search-container input[type="text"] {
+    max-width: 542px;
+    flex: 3;
+  }
 }
