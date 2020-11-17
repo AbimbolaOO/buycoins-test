@@ -8,45 +8,52 @@
   </head>
   <body>
     <!-- Header section -->
-    <header class="header-style">
-      <section class="menu">
-        <!-- Gitlogo -->
-        <img src="assets/img/GitHub.png" alt="github logo" class="logo" />
+    <header>
+      <input type="checkbox" />
+      <img
+        src="assets/img/GitHub.png"
+        alt="github logo"
+        class="logo header-logo"
+      />
+
+      <div class="hamburger-icon"></div>
+      <!-- Main navigation -->
+      <nav class="menu-items">
         <!-- Search bar -->
         <form>
-          <input class="search" name="search" type="text" />
+          <input
+            class="search"
+            name="search"
+            type="text"
+            placeholder="Search or jump to..."
+          />
         </form>
-        <!-- Main navigation -->
-        <nav>
-          <a href="#">Dashboard</a>
-          <a href="#">Pulls</a>
-          <a href="#">Issues</a>
-          <a href="#">Marketplace</a>
-          <a href="#">Explore</a>
-          <a href="#">
-            <img
-              src="assets/img/GitHub.png"
-              alt="github logo"
-              class="logo"
-            />AbimbolaOO</a
-          >
-          <a href="#">
-            <img
-              src="assets/img/GitHub.png"
-              alt="github logo"
-              class="logo"
-            />Sign Out</a
-          >
-        </nav>
-      </section>
+        <a href="#" class="hide">Dashboard</a>
+        <a href="#">Pulls</a>
+        <a href="#">Issues</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Explore</a>
+        <a href="#" class="nav-with-icon hide">
+          <img
+            src="assets/img/GitHub.png"
+            alt="github logo"
+            class="logo"
+          />AbimbolaOO</a
+        >
+        <a href="#" class="nav-with-icon sign-out hide">
+          <img src="assets/img/GitHub.png" alt="github logo" class="logo" />Sign
+          Out</a
+        >
+      </nav>
       <!-- Header icons -->
-      <!-- <div class="action-icons">
+      <div class="nav-icons">
         <div>icon 1</div>
         <div>icon 2</div>
         <div>icon 3</div>
-      </div> -->
+      </div>
     </header>
-
+    <!--  -->
+    <!--  -->
     <!-- Main body section -->
     <main class="main-section">
       <!-- my profile -->
