@@ -1,0 +1,33 @@
+.pagination-btn-container,
+.pagination-btn-container > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.pagination-btn-container {
+  margin: 2px 0 4px;
+}
+
+.pagination-btn-container > * {
+  border: 1px solid rgb(224, 224, 224);
+  background-color: #fafbfc;
+  padding: 4px 16px;
+  font-weight: 500;
+  color: #0366d6;
+}
+
+.previous-btn {
+  border-radius: 6px 0 0 6px;
+  color: #0366d680;
+}
+
+.next-btn {
+  border-radius: 0 6px 6px 0;
+}
+.next-btn:hover {
+  color: #fafbfc;
+  background-color: #0366d6;
+  cursor: pointer;
+}
