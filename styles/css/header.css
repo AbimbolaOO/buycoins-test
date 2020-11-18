@@ -1,5 +1,4 @@
 header {
-  /* border: 2px solid rebeccapurple; */
   background-color: #24292e;
 }
 
@@ -14,8 +13,44 @@ header * a {
   font-size: 14px;
 }
 
+.header-logo {
+  width: 32px;
+  height: 32px;
+  fill: white;
+}
+
+.header-logo:hover {
+  fill: rgba(252, 243, 243, 0.767);
+}
+
 .nav-icons {
-  color: rgb(252, 243, 243);
+  justify-content: center;
+}
+
+.nav-icons > div {
+  margin-left: 18px;
+}
+.nav-icons > div:hover > svg {
+  fill: rgba(252, 243, 243, 0.767);
+}
+
+.nav-icons * svg {
+  width: 16px;
+  height: 16px;
+  fill: rgb(252, 243, 243);
+}
+
+.nav-icons * .triangle {
+  width: 8px;
+  height: 8px;
+  margin-left: 4px;
+  align-self: center;
+}
+
+.nav-icons * img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
 header * a:hover {
@@ -121,6 +156,10 @@ header * a:hover {
 
   .nav-with-icon {
     flex-direction: row;
+  }
+
+  .hide-header-icon {
+    display: none;
   }
 }
 
