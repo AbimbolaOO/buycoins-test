@@ -9,7 +9,7 @@ header * {
 
 header * a {
   color: rgb(252, 243, 243);
-  font-weight: bold;
+  font-weight: 500;
   font-size: 14px;
 }
 

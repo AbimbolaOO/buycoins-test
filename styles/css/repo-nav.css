@@ -2,9 +2,6 @@
 .repo-nav {
   display: flex;
   font-size: 14px;
-  position: -webkit-sticky; /*Safari*/
-  position: sticky;
-  top: 0;
   background-color: white;
   border-bottom: 1px solid rgb(224, 224, 224);
 }
@@ -25,11 +22,7 @@
   background-color: rgb(223, 222, 222);
   position: absolute;
   bottom: 0;
-}
-
-.repo-nav a:active {
-  font-weight: bold;
-  color: black;
+  transition: height 0.4s ease-out;
 }
 
 .repo-nav a:hover:before {
@@ -40,11 +33,28 @@
   background-color: rgb(252, 87, 87);
 }
 
+.repo-nav-active {
+  font-weight: 500;
+}
+
+a.repo-nav-active:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  left: 0;
+  background-color: rgb(252, 87, 87);
+  position: absolute;
+  bottom: 0;
+}
+
 @media only screen and (max-width: 768px) {
   .repo-nav {
     margin: 0 -8%;
     padding-left: 8%;
     overflow-x: auto;
+    position: -webkit-sticky; /*Safari*/
+    position: sticky;
+    top: 0;
   }
 
   .repo-nav-img-container {
@@ -54,20 +64,35 @@
 
 @media only screen and (min-width: 769px) {
   .repo-nav {
-    margin: 0;
     /* border: 1px solid saddlebrown; */
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding-left: 32px;
+  }
+
+  .repo-nav .repo-nav-img-container {
+    margin-right: 200px;
   }
 
   .repo-nav-img-container {
     display: flex;
     align-items: center;
   }
+
   .repo-nav-profile-img {
     width: 32px;
     height: 32px;
     border-radius: 50%;
   }
+
   .repo-user-name {
     padding-left: 8px;
+    font-weight: 500;
+  }
+
+  .profile-img,
+  .focusing-container {
+    z-index: 2;
   }
 }
