@@ -2,10 +2,15 @@
 .repo-nav {
   display: flex;
   font-size: 14px;
+  position: -webkit-sticky; /*Safari*/
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(224, 224, 224);
 }
 
 .repo-nav a {
-  padding: 8px 16px;
+  padding: 16px 16px;
   /* border: 2px solid salmon; */
   position: relative;
   cursor: pointer;
@@ -33,4 +38,36 @@
 .repo-nav a:active:before {
   height: 2px;
   background-color: rgb(252, 87, 87);
+}
+
+@media only screen and (max-width: 768px) {
+  .repo-nav {
+    margin: 0 -8%;
+    padding-left: 8%;
+    overflow-x: auto;
+  }
+
+  .repo-nav-img-container {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .repo-nav {
+    margin: 0;
+    /* border: 1px solid saddlebrown; */
+  }
+
+  .repo-nav-img-container {
+    display: flex;
+    align-items: center;
+  }
+  .repo-nav-profile-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  .repo-user-name {
+    padding-left: 8px;
+  }
 }

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   padding: 28px 0;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgb(224, 224, 224);
 }
 
 .repo-meta-data {
@@ -18,7 +18,7 @@
   line-height: 1.5rem;
   font-weight: bold;
   padding-bottom: 8px;
-  color: rgb(108, 108, 255);
+  color: #0366d6;
 }
 
 .repo-meta-data a:hover {
