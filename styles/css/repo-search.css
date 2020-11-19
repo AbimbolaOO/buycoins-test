@@ -43,6 +43,7 @@
 
 @media only screen and (min-width: 768px) {
   .repo-search-container {
+    margin-top: 51px;
     padding: 16px 0;
   }
   .repo-search-container input[type="text"] {
