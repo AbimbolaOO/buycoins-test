@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <script type="module" src="scripts/index.mjs"></script>
     <title>GitHub-clone</title>
   </head>
   <body>
@@ -208,9 +209,9 @@
       <!-- Main github contents and Repositories -->
       <section class="git-content">
         <!-- Repository navigation -->
-        <nav class="repo-nav">
+        <nav id="repo-nav" class="repo-nav">
           <!--  -->
-          <div class="repo-nav-img-container">
+          <div id="repo-nav-profile" class="repo-nav-img-container">
             <img
               src="assets/img/profile-picture.jpg"
               alt="abimbola's picture"
@@ -467,7 +468,5 @@
         </li>
       </ul>
     </footer>
-
-    <script src="src/index.js"></script>
   </body>
 </html>

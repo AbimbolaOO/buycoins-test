@@ -8,7 +8,6 @@
 
 .repo-nav a {
   padding: 16px 16px;
-  /* border: 2px solid salmon; */
   position: relative;
   cursor: pointer;
   color: black;
@@ -64,7 +63,6 @@ a.repo-nav-active:before {
 
 @media only screen and (min-width: 769px) {
   .repo-nav {
-    /* border: 1px solid saddlebrown; */
     position: absolute;
     width: 100%;
     left: 0;
@@ -73,6 +71,7 @@ a.repo-nav-active:before {
 
   .repo-nav .repo-nav-img-container {
     margin-right: 200px;
+    visibility: hidden;
   }
 
   .repo-nav-img-container {
@@ -94,5 +93,14 @@ a.repo-nav-active:before {
   .profile-img,
   .focusing-container {
     z-index: 2;
+  }
+
+  .sticky-nav {
+    position: fixed;
+    top: 0;
+  }
+
+  .sticky-nav-profile {
+    visibility: visible !important;
   }
 }
