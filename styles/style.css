@@ -1,6 +1,7 @@
 /* Import of all css file */
 @import "css/resets.css";
 @import "css/header.css";
+@import "css/drop-down.css";
 @import "css/main-body.css";
 @import "css/profile-section.css";
 @import "css/repo-nav.css";
