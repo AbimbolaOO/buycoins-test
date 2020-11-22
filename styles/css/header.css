@@ -28,6 +28,9 @@ header * a {
 }
 
 .nav-icons > div {
+  cursor: pointer;
+  padding: 0 4px;
+  justify-content: space-between;
   margin-left: 18px;
 }
 .nav-icons > div:hover > svg {
@@ -35,8 +38,6 @@ header * a {
 }
 
 .nav-icons * svg {
-  width: 16px;
-  height: 16px;
   fill: rgb(252, 243, 243);
 }
 
@@ -70,7 +71,6 @@ header * a:hover {
 
 .search::placeholder {
   color: rgba(252, 243, 243, 0.767);
-  opacity: 1;
 }
 
 .search:focus {
@@ -161,6 +161,18 @@ header * a:hover {
   .hide-header-icon {
     display: none;
   }
+
+  .header-image {
+    border-radius: 50%;
+    width: 24px;
+    margin-right: 8px;
+  }
+
+  .nav-with-svg-icon {
+    width: 16px;
+    fill: white;
+    margin-right: 8px;
+  }
 }
 
 @media only screen and (min-width: 769px) {
@@ -200,5 +212,13 @@ header * a:hover {
   .nav-icons {
     flex: 1;
     justify-content: flex-end;
+  }
+
+  .nav-icons > div {
+    position: relative;
+  }
+
+  .plus {
+    width: 12px !important;
   }
 }

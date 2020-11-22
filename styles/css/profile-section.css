@@ -110,6 +110,13 @@
   font-size: 14px;
 }
 
+.followers-stars-icons {
+  align-self: center;
+  width: 16px;
+  height: 16px;
+  /* margin-right: 8px; */
+}
+
 @media only screen and (max-width: 768px) {
   .hidden-profile {
     display: none;
@@ -121,7 +128,7 @@
 
 @media only screen and (min-width: 769px) {
   .profile {
-    width: 321px;
+    flex: 1;
     padding: 0 16px;
     position: relative;
   }
@@ -142,8 +149,8 @@
 
   .focusing-container {
     position: absolute;
-    left: 80%;
-    top: 17%;
+    left: 85%;
+    top: 30%;
     background-color: white;
     border-radius: 20px;
     padding: 8px 4px;
@@ -156,5 +163,12 @@
 
   .focusing-container:hover > .focus-text {
     display: flex;
+  }
+
+  .profile-icons {
+    align-self: flex-end;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
   }
 }

@@ -1,3 +1,8 @@
+.repo-search-container,
+.repo-search-container * {
+  display: flex;
+  align-items: center;
+}
 .repo-search-container {
   padding: 16px 0 0 0;
   display: flex;
@@ -12,13 +17,24 @@
 
 .repo-search-container button {
   background-color: #fafbfc;
+  transition: background-color 0.2s ease-in;
+}
+
+.repo-search-container button:hover {
+  background-color: #ebeef0;
 }
 
 .repo-search-container button:last-child {
   margin-right: 0;
   margin-left: auto;
-  background-color: #2ea44f;
+  background-color: #28a745;
   color: #fff;
+}
+
+.repo-search-container button:last-child:hover {
+  margin-right: 0;
+  margin-left: auto;
+  background-color: #22863a;
 }
 
 .repo-search-container > * {
@@ -28,6 +44,18 @@
   border: 1px solid rgb(224, 224, 224);
   line-height: 20px;
   outline: none;
+}
+
+.search-icons {
+  align-self: flex-end;
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+}
+
+.repo-search-container button:last-child .search-icons {
+  margin-left: 0;
+  margin-right: 8px;
 }
 
 @media only screen and (max-width: 768px) {

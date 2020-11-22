@@ -3,23 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
     <script type="module" src="scripts/index.mjs"></script>
+    <link rel="stylesheet" href="styles/style.css" />
     <title>GitHub-clone</title>
   </head>
   <body>
     <!-- Header section -->
     <header>
       <input type="checkbox" />
-      <svg
-        class="header-logo"
-        id="Bold"
-        enable-background="new 0 0 24 24"
-        height="512"
-        viewBox="0 0 24 24"
-        width="512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg class="header-logo" viewBox="0 0 24 24">
         <path
           d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"
         />
@@ -38,33 +30,52 @@
           />
         </form>
         <a href="#" class="hide">Dashboard</a>
-        <a href="#">Pulls</a>
+        <a href="#" class="trimable-text">Pull Request</a>
         <a href="#">Issues</a>
         <a href="#">Marketplace</a>
         <a href="#">Explore</a>
         <a href="#" class="nav-with-icon hide">
           <img
-            src="assets/img/GitHub.png"
-            alt="github logo"
-            class="logo"
+            src="assets/img/profile-picture.jpg"
+            alt="user image"
+            class="header-image"
           />AbimbolaOO</a
         >
-        <a href="#" class="nav-with-icon sign-out hide">
-          <img src="assets/img/GitHub.png" alt="github logo" class="logo" />Sign
-          Out</a
-        >
+        <a href="#" class="nav-with-icon hide">
+          <svg class="nav-with-svg-icon" viewBox="0 0 512 512">
+            <g>
+              <g>
+                <path
+                  d="M255.15,468.625H63.787c-11.737,0-21.262-9.526-21.262-21.262V64.638c0-11.737,9.526-21.262,21.262-21.262H255.15
+             c11.758,0,21.262-9.504,21.262-21.262S266.908,0.85,255.15,0.85H63.787C28.619,0.85,0,29.47,0,64.638v382.724
+             c0,35.168,28.619,63.787,63.787,63.787H255.15c11.758,0,21.262-9.504,21.262-21.262
+             C276.412,478.129,266.908,468.625,255.15,468.625z"
+                />
+              </g>
+            </g>
+            <g>
+              <g>
+                <path
+                  d="M505.664,240.861L376.388,113.286c-8.335-8.25-21.815-8.143-30.065,0.213s-8.165,21.815,0.213,30.065l92.385,91.173
+             H191.362c-11.758,0-21.262,9.504-21.262,21.262c0,11.758,9.504,21.263,21.262,21.263h247.559l-92.385,91.173
+             c-8.377,8.25-8.441,21.709-0.213,30.065c4.167,4.21,9.653,6.336,15.139,6.336c5.401,0,10.801-2.041,14.926-6.124l129.276-127.575
+             c4.04-3.997,6.336-9.441,6.336-15.139C512,250.302,509.725,244.88,505.664,240.861z"
+                />
+              </g>
+            </g>
+          </svg>
+          <span>Sign out</span>
+        </a>
       </nav>
       <!-- Header icons -->
       <div class="nav-icons">
         <!-- Icon 1 -->
         <div>
           <svg
-            id="Layer_4"
-            enable-background="new 0 0 24 24"
-            height="512"
+            id="hide-header-icon-0"
+            height="16"
             viewBox="0 0 24 24"
-            width="512"
-            xmlns="http://www.w3.org/2000/svg"
+            width="16"
           >
             <g>
               <path
@@ -75,33 +86,26 @@
               />
             </g>
           </svg>
+          <div
+            id="hide-drop-down-0"
+            class="notification-drop-down hide-drop-down"
+          >
+            You have no unread notifications
+          </div>
         </div>
         <!-- Icon 2 -->
         <div class="hide-header-icon">
           <svg
-            height="448pt"
+            id="hide-header-icon-1"
             viewBox="0 0 448 448"
-            width="448pt"
-            xmlns="http://www.w3.org/2000/svg"
+            class="plus"
+            width="16"
           >
             <path
               d="m272 184c-4.417969 0-8-3.582031-8-8v-176h-80v176c0 4.417969-3.582031 8-8 8h-176v80h176c4.417969 0 8 3.582031 8 8v176h80v-176c0-4.417969 3.582031-8 8-8h176v-80zm0 0"
             />
           </svg>
-          <svg
-            class="triangle"
-            version="1.1"
-            id="Capa_1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            width="292.362px"
-            height="292.362px"
-            viewBox="0 0 292.362 292.362"
-            style="enable-background: new 0 0 292.362 292.362"
-            xml:space="preserve"
-          >
+          <svg class="triangle" viewBox="0 0 292.362 292.362">
             <g>
               <path
                 d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424
@@ -110,39 +114,56 @@
               />
             </g>
           </svg>
+          <div id="hide-drop-down-1" class="drop-down hide-drop-down">
+            <a>New repository</a> <a>Import repository</a> <a>New gist</a
+            ><a>New organization</a> <a>New project</a>
+          </div>
         </div>
         <!-- Icon 3 -->
         <div class="hide-header-icon">
           <img
+            id="hide-header-icon-2"
             class="logo"
             src="assets/img/profile-picture.jpg"
             alt="abimbola's picture"
             class="profile-img"
-          /><?xml version="1.0" encoding="iso-8859-1"?>
-          <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-          <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-          <svg
-            class="triangle"
-            version="1.1"
-            id="Capa_1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            width="292.362px"
-            height="292.362px"
-            viewBox="0 0 292.362 292.362"
-            style="enable-background: new 0 0 292.362 292.362"
-            xml:space="preserve"
-          >
+          />
+          <svg class="triangle" viewBox="0 0 292.362 292.362">
             <g>
               <path
                 d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424
-              C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428
-              s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"
+            C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428
+            s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"
               />
             </g>
           </svg>
+          <!-- Drop down contents -->
+          <div
+            id="hide-drop-down-2"
+            class="drop-down hide-drop-down drop-width-adjust"
+          >
+            <div>Signed in as</div>
+            <div class="drop-down-user-name">AbimbolaOO</div>
+            <hr />
+            <div>
+              <div class="drop-down-focusing">
+                <span>🔴</span>
+                <span>Focusing</span>
+              </div>
+            </div>
+            <hr />
+            <a>Your profile</a>
+            <a>Your repositories</a>
+            <a>Your projects</a>
+            <a>Your stars</a>
+            <a>Your gists</a>
+            <hr />
+            <a>upgrade</a>
+            <a>Feature preview</a>
+            <a>Help</a>
+            <a>Settings</a>
+            <a>sign out</a>
+          </div>
         </div>
       </div>
     </header>
@@ -183,24 +204,61 @@
         <button class="edit-profile-btn">Edit profile</button>
         <!-- Github followers and stars -->
         <div class="followers-stars">
-          <a><span>3</span> followers </a>
+          <a
+            ><span
+              ><img
+                src="assets/svg/users.svg"
+                alt="icon"
+                class="followers-stars-icons" /></span
+            ><span>3</span> followers
+          </a>
           <span>.</span>
           <a> <span>0</span> following </a>
           <span>.</span>
-          <a> <span>140</span> star </a>
+          <a>
+            <span>140</span
+            ><span
+              ><img
+                src="assets/svg/star.svg"
+                alt="icon"
+                class="followers-stars-icons"
+            /></span>
+            star
+          </a>
         </div>
         <!--  -->
         <!-- Contact list -->
         <ul class="contact-list hidden-profile">
           <!-- Location -->
-          <li><span>i</span>Lagos, Nigeria</li>
+          <li>
+            <span
+              ><img
+                src="assets/svg/pin.svg"
+                alt="icon"
+                class="profile-icons" /></span
+            >Lagos, Nigeria
+          </li>
           <!-- Twitter handle -->
-          <li><span>i</span><a>@Abimbola_whyte</a></li>
+          <li>
+            <span
+              ><img
+                src="assets/svg/twitter.svg"
+                alt="icon"
+                class="profile-icons" /></span
+            ><a>@Abimbola_whyte</a>
+          </li>
         </ul>
         <!-- Highlight and Arctic Vault -->
         <div class="highlights hidden-profile">
           <h2>Highlight</h2>
-          <div class="arctic"><span>i</span>Arctic Code Vault Contribitor</div>
+          <div class="arctic">
+            <span
+              ><img
+                src="assets/svg/snowflake.svg"
+                alt="icon"
+                class="profile-icons" /></span
+            >Arctic Code Vault Contribitor
+          </div>
         </div>
         <!--  -->
       </section>
@@ -219,23 +277,75 @@
             />
             <div class="repo-user-name">AbimbolaOO</div>
           </div>
-          <a href="#">Overview</a>
-          <a href="#" class="repo-nav-active">Repositories</a>
-          <a href="#">Projects</a>
-          <a href="#">Packages</a>
+          <a href="#"
+            ><span
+              ><img
+                src="assets/svg/book.svg"
+                alt="icon"
+                class="repo-nav-icons" /></span
+            >Overview</a
+          >
+          <a href="#" class="repo-nav-active"
+            ><span
+              ><img
+                src="assets/svg/book-of-black-cover-closed.svg"
+                alt="icon"
+                class="repo-nav-icons" /></span
+            >Repositories <span class="repo-nav-text">40</span></a
+          >
+          <a href="#"
+            ><span
+              ><img
+                src="assets/svg/dashboard.svg"
+                alt="icon"
+                class="repo-nav-icons" /></span
+            >Projects</a
+          >
+          <a href="#"
+            ><span
+              ><img
+                src="assets/svg/box.svg"
+                alt="icon"
+                class="repo-nav-icons" /></span
+            >Packages</a
+          >
         </nav>
         <!-- Repository search bar section -->
         <section class="repo-search-container">
           <!-- Search bar -->
           <input
+            placeholder="Find a repository..."
             type="text"
             class="my-repo-search-text"
             name="myRepoSearchText"
           />
           <!-- buttons -->
-          <button>Type: All</button>
-          <button>Language: All</button>
-          <button>New</button>
+          <button>
+            Type: All
+            <span
+              ><img
+                src="assets/svg/sort-down.svg"
+                alt="icon"
+                class="search-icons"
+            /></span>
+          </button>
+          <button>
+            Language: All
+            <span
+              ><img
+                src="assets/svg/sort-down.svg"
+                alt="icon"
+                class="search-icons"
+            /></span>
+          </button>
+          <button>
+            <span
+              ><img
+                src="assets/svg/book-of-black-cover-closed.svg"
+                alt="icon"
+                class="search-icons" /></span
+            >New
+          </button>
         </section>
         <!-- Repositories list section -->
         <ul>
@@ -252,176 +362,30 @@
                 <!-- Repo info div -->
                 <div class="repo-info">
                   <ul class="repo-info-list">
+                    <li><div class="color-code"></div></li>
                     <li>TypeScript</li>
-                    <li>GNU General Public License v2.0</li>
+                    <li>
+                      <span
+                        ><img
+                          src="assets/svg/star.svg"
+                          alt="icon"
+                          class="repo-info-icons" /></span
+                      >GNU General Public License v2.0
+                    </li>
                     <li>Updated 5 days ago</li>
                   </ul>
                 </div>
               </div>
               <div class="star-and-activity">
                 <!-- Star button -->
-                <button>star</button>
-                <!-- Activity img -->
-                <img
-                  src="assets/img/GitHub.png"
-                  alt="github logo"
-                  class="logo"
-                />
-              </div>
-            </section>
-          </li>
-          <li>
-            <!-- Repository tile -->
-            <section class="repo-tile">
-              <div class="repo-meta-data">
-                <a href="#">ml-school</a>
-                <p>
-                  A global online platform were people can learn about machine
-                  learning. A platform where any can contribute to the
-                  development of others.
-                </p>
-                <!-- Repo info div -->
-                <div class="repo-info">
-                  <ul class="repo-info-list">
-                    <li>TypeScript</li>
-                    <li>GNU General Public License v2.0</li>
-                    <li>Updated 5 days ago</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="star-and-activity">
-                <!-- Star button -->
-                <button>star</button>
-                <!-- Activity img -->
-                <img
-                  src="assets/img/GitHub.png"
-                  alt="github logo"
-                  class="logo"
-                />
-              </div>
-            </section>
-          </li>
-          <li>
-            <!-- Repository tile -->
-            <section class="repo-tile">
-              <div class="repo-meta-data">
-                <a href="#">ml-school</a>
-                <p>
-                  A global online platform were people can learn about machine
-                  learning. A platform where any can contribute to the
-                  development of others.
-                </p>
-                <!-- Repo info div -->
-                <div class="repo-info">
-                  <ul class="repo-info-list">
-                    <li>TypeScript</li>
-                    <li>GNU General Public License v2.0</li>
-                    <li>Updated 5 days ago</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="star-and-activity">
-                <!-- Star button -->
-                <button>star</button>
-                <!-- Activity img -->
-                <img
-                  src="assets/img/GitHub.png"
-                  alt="github logo"
-                  class="logo"
-                />
-              </div>
-            </section>
-          </li>
-          <li>
-            <!-- Repository tile -->
-            <section class="repo-tile">
-              <div class="repo-meta-data">
-                <a href="#">ml-school</a>
-                <p>
-                  A global online platform were people can learn about machine
-                  learning. A platform where any can contribute to the
-                  development of others.
-                </p>
-                <!-- Repo info div -->
-                <div class="repo-info">
-                  <ul class="repo-info-list">
-                    <li>TypeScript</li>
-                    <li>GNU General Public License v2.0</li>
-                    <li>Updated 5 days ago</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="star-and-activity">
-                <!-- Star button -->
-                <button>star</button>
-                <!-- Activity img -->
-                <img
-                  src="assets/img/GitHub.png"
-                  alt="github logo"
-                  class="logo"
-                />
-              </div>
-            </section>
-          </li>
-          <li>
-            <!-- Repository tile -->
-            <section class="repo-tile">
-              <div class="repo-meta-data">
-                <a href="#">ml-school</a>
-                <p>
-                  A global online platform were people can learn about machine
-                  learning. A platform where any can contribute to the
-                  development of others.
-                </p>
-                <!-- Repo info div -->
-                <div class="repo-info">
-                  <ul class="repo-info-list">
-                    <li>TypeScript</li>
-                    <li>GNU General Public License v2.0</li>
-                    <li>Updated 5 days ago</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="star-and-activity">
-                <!-- Star button -->
-                <button>star</button>
-                <!-- Activity img -->
-                <img
-                  src="assets/img/GitHub.png"
-                  alt="github logo"
-                  class="logo"
-                />
-              </div>
-            </section>
-          </li>
-          <li>
-            <!-- Repository tile -->
-            <section class="repo-tile">
-              <div class="repo-meta-data">
-                <a href="#">ml-school</a>
-                <p>
-                  A global online platform were people can learn about machine
-                  learning. A platform where any can contribute to the
-                  development of others.
-                </p>
-                <!-- Repo info div -->
-                <div class="repo-info">
-                  <ul class="repo-info-list">
-                    <li>TypeScript</li>
-                    <li>GNU General Public License v2.0</li>
-                    <li>Updated 5 days ago</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="star-and-activity">
-                <!-- Star button -->
-                <button>star</button>
-                <!-- Activity img -->
-                <img
-                  src="assets/img/GitHub.png"
-                  alt="github logo"
-                  class="logo"
-                />
+                <button>
+                  <span
+                    ><img
+                      src="assets/svg/star.svg"
+                      alt="icon"
+                      class="star-icons" /></span
+                  >star
+                </button>
               </div>
             </section>
           </li>

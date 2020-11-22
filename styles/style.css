@@ -1,6 +1,7 @@
 /* Import of all css file */
 @import "css/resets.css";
 @import "css/header.css";
+@import "css/drop-down.css";
 @import "css/main-body.css";
 @import "css/profile-section.css";
 @import "css/repo-nav.css";
@@ -8,4 +9,3 @@
 @import "css/git-repo-tile.css";
 @import "css/pagination.css";
 @import "css/footer.css";
-@import "css/images.css";
