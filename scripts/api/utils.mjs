@@ -91,7 +91,6 @@ export function getPropsFromNode(node) {
 }
 
 export function returnValue(prop) {
-  console.log(prop);
   if (prop === null || prop === false) {
     return "";
   } else {
