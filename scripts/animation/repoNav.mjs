@@ -1,25 +1,17 @@
+function checkScroll(position) {
+  if (
+    document.body.scrollTop > position ||
+    document.documentElement.scrollTop > position
+  ) {
+    document.getElementById("repo-nav").classList.add("sticky-nav");
+  } else {
+    document.getElementById("repo-nav").classList.remove("sticky-nav");
+  }
+}
+
 export function repoNav() {
   window.addEventListener("scroll", function (e) {
-    if (
-      document.body.scrollTop > 106 ||
-      document.documentElement.scrollTop > 106
-    ) {
-      document.getElementById("repo-nav").classList.add("sticky-nav");
-    } else {
-      document.getElementById("repo-nav").classList.remove("sticky-nav");
-    }
-
-    if (
-      document.body.scrollTop > 394 ||
-      document.documentElement.scrollTop > 394
-    ) {
-      document
-        .getElementById("repo-nav-profile")
-        .classList.add("sticky-nav-profile");
-    } else {
-      document
-        .getElementById("repo-nav-profile")
-        .classList.remove("sticky-nav-profile");
-    }
+    checkScroll(106);
+    checkScroll(394);
   });
 }
