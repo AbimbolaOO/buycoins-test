@@ -31,7 +31,6 @@ export function graphqlQuery(login) {
                   name
                   description
                   isFork
-                  viewerHasStarred
                   stargazerCount
                   primaryLanguage {
                       name

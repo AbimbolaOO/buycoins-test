@@ -149,11 +149,11 @@
 
   .focusing-container {
     position: absolute;
-    left: 85%;
-    top: 30%;
+    left: 83%;
+    top: 6.5%;
     background-color: white;
     border-radius: 20px;
-    padding: 8px 4px;
+    padding: 8px 0px 8px 6px;
     align-items: center;
   }
 

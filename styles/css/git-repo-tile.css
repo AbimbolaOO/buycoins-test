@@ -78,9 +78,16 @@
 }
 
 .color-code {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   background-color: #0366d6;
   border-radius: 50%;
   margin-right: -12px;
+  margin-top: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+  .repo-meta-data p {
+    width: 80%;
+  }
 }
