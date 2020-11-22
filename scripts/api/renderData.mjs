@@ -34,6 +34,15 @@ function renderUserProfile(data) {
   document.querySelector(".main-section").insertBefore(profile, gitContent);
 }
 
+function otherGeneralRenders(data) {
+  const { avatarUrl, name, login, status } = getApiProps(data);
+  document.querySelector(".logo").src = avatarUrl;
+  document.querySelector(".header-image").src = avatarUrl;
+  document.querySelector(".drop-down-status").textContent = status.message;
+  document.querySelector(".drop-down-user-name").textContent = login;
+  document.querySelector(".nav-with-icon-text").textContent = login;
+}
+
 export async function renderData() {
   const response = await fetch("https://api.github.com/graphql", {
     mode: "cors",
@@ -56,4 +65,5 @@ export async function renderData() {
   const data = await response.json();
   renderUserProfile(data);
   renderRepoTile(data);
+  otherGeneralRenders(data);
 }
