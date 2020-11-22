@@ -1,5 +1,9 @@
 import { graphqlQuery } from "./graphqlQuery.mjs";
-import { elapsedTime, getApiProps } from "./utils.mjs";
+import { repoTileView } from "./view/repoTileView.mjs";
+import { elapsedTime, getApiProps, getPropsFromNode } from "./utils.mjs";
+
+const unorderedList = document.createElement("ul");
+const paginationBtns = document.querySelector(".pagination-btn-container");
 
 const githubData = {
   // the token below should only have public access i.e no security risk
@@ -11,13 +15,16 @@ const query = graphqlQuery(githubData.userName);
 
 function cleanData(data) {
   const { edges } = getApiProps(data);
-  document.body.innerText = JSON.stringify(
-    edges,
-    // elapsedTime(repositories.edges[0].node.updatedAt),
-    // repositories.edges[0].node.updatedAt,
-    null,
-    2
-  );
+  edges.forEach((repoData) => {
+    const listItem = document.createElement("li");
+    listItem.innerHTML = repoTileView(getPropsFromNode(repoData));
+    unorderedList.appendChild(listItem);
+    console.log(getPropsFromNode(repoData));
+  });
+
+  document
+    .querySelector(".git-content")
+    .insertBefore(unorderedList, paginationBtns);
 }
 
 export async function fetchData() {
@@ -35,6 +42,5 @@ export async function fetchData() {
   });
 
   const data = await res.json();
-  console.log(data);
   cleanData(data);
 }

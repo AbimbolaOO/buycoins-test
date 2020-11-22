@@ -85,3 +85,9 @@
   margin-right: -12px;
   margin-top: 2px;
 }
+
+@media only screen and (max-width: 768px) {
+  .repo-meta-data p {
+    width: 80%;
+  }
+}
