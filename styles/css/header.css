@@ -71,7 +71,6 @@ header * a:hover {
 
 .search::placeholder {
   color: rgba(252, 243, 243, 0.767);
-  opacity: 1;
 }
 
 .search:focus {
@@ -168,6 +167,12 @@ header * a:hover {
     width: 24px;
     margin-right: 8px;
   }
+
+  .nav-with-svg-icon {
+    width: 16px;
+    fill: white;
+    margin-right: 8px;
+  }
 }
 
 @media only screen and (min-width: 769px) {
@@ -214,7 +219,6 @@ header * a:hover {
   }
 
   .plus {
-    width: 10px !important;
-    margin-right: 4px;
+    width: 12px !important;
   }
 }

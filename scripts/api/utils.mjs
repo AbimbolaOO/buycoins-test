@@ -18,7 +18,7 @@ export function elapsedTime(updatedAt) {
   } else if (timeGap < 3600 * 24 * 30) {
     return `updated ${currentTime.getDate() - updatedTime.getDate()} ago`;
   } else if (timeGap < 3600 * 24 * 30 * 365) {
-    return `updated ${updatedTime.getDate()} ${new Intl.DateTimeFormat(
+    return `updated on ${updatedTime.getDate()} ${new Intl.DateTimeFormat(
       "en-GB",
       options
     ).format(updatedTime)}`;

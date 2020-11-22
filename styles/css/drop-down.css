@@ -89,6 +89,7 @@
 .notification-drop-down {
   position: absolute;
   justify-content: center;
+  align-items: center;
   width: 200px;
   color: white;
   font-size: 12px;

@@ -1,13 +1,10 @@
 .main-section {
   display: flex;
-  /* border: 2px solid rebeccapurple; */
   justify-content: space-around;
   margin: 1px 5% 32px;
 }
 
-/* main github content styles */
 .git-content {
-  /* border: 2px solid rgb(139, 114, 250); */
   flex: 3;
   padding-left: 16px;
 }
@@ -22,7 +19,6 @@
 }
 @media only screen and (min-width: 768px) {
   .main-section {
-    margin: 42px 3% 32px 1.5%;
-    /* position: relative; */
+    margin: 18px 3% 32px 1.5%;
   }
 }

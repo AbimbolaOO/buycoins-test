@@ -9,7 +9,6 @@
 .repo-meta-data {
   display: flex;
   flex-direction: column;
-  /* border: 2px solid saddlebrown; */
   width: 75%;
 }
 
@@ -34,26 +33,20 @@
 
 .repo-info {
   display: flex;
-  /* border: 2px solid rebeccapurple; */
 }
 
 .repo-info-list {
   display: flex;
   font-size: 12px;
-  /* border: 2px solid red; */
 }
 
 .repo-info-list > * {
   margin-right: 16px;
 }
 
-/*  */
-
 .star-and-activity {
   display: flex;
   flex-direction: column;
-  /* border: 2px solid royalblue; */
-  /* width: 25%; */
   align-items: flex-end;
 }
 
@@ -65,5 +58,29 @@
   line-height: 20px;
   outline: none;
   margin-bottom: 14px;
-  /* display: block; */
+  transition: background-color 0.2s ease-in;
+}
+
+.star-and-activity button:hover {
+  background-color: #ebeef0;
+}
+
+.star-icons,
+.repo-info-icons {
+  align-self: flex-end;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+}
+
+.repo-info-icons {
+  margin-right: 4px;
+}
+
+.color-code {
+  width: 16px;
+  height: 16px;
+  background-color: #0366d6;
+  border-radius: 50%;
+  margin-right: -12px;
 }

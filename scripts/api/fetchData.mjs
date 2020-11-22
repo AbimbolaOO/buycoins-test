@@ -3,7 +3,7 @@ import { elapsedTime, getApiProps } from "./utils.mjs";
 
 const githubData = {
   // the token below should only have public access i.e no security risk
-  token: "4f17051df33aaf26081d0b4a998cae988902718e",
+  token: "e94e3d231890131a9495c9790c927f30437018e1",
   userName: "AbimbolaOO",
 };
 

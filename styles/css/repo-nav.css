@@ -7,10 +7,12 @@
 }
 
 .repo-nav a {
+  display: flex;
   padding: 16px 16px;
   position: relative;
   cursor: pointer;
   color: black;
+  align-items: center;
 }
 
 .repo-nav a:before {
@@ -21,7 +23,7 @@
   background-color: rgb(223, 222, 222);
   position: absolute;
   bottom: 0;
-  transition: height 0.4s ease-out;
+  transition: height 0.2s ease-in-out;
 }
 
 .repo-nav a:hover:before {
@@ -30,6 +32,10 @@
 .repo-nav a:active:before {
   height: 2px;
   background-color: rgb(252, 87, 87);
+}
+
+.repo-nav a span {
+  margin: 4px 8px 0px 8px;
 }
 
 .repo-nav-active {
@@ -44,6 +50,19 @@ a.repo-nav-active:before {
   background-color: rgb(252, 87, 87);
   position: absolute;
   bottom: 0;
+}
+
+.repo-nav-icons {
+  width: 16px;
+  height: 16px;
+}
+
+.repo-nav-text {
+  border-radius: 20px;
+  background-color: #d1d5da80;
+  padding: 2px 8px;
+  font-weight: regular;
+  color: rgba(0, 0, 0, 0.61);
 }
 
 @media only screen and (max-width: 768px) {
@@ -70,7 +89,7 @@ a.repo-nav-active:before {
   }
 
   .repo-nav .repo-nav-img-container {
-    margin-right: 200px;
+    margin-right: 17%;
     visibility: hidden;
   }
 
