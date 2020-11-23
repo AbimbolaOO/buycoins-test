@@ -80,6 +80,18 @@ header * a:hover {
   background-color: #fafbfc;
 }
 
+input.search {
+  background-image: url("../../assets/svg/download.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 242px 2px;
+  background-size: 20px;
+}
+
+input.search:focus {
+  background-image: none;
+}
+
 @media only screen and (max-width: 768px) {
   header,
   header * {
