@@ -73,6 +73,16 @@ a.repo-nav-active:before {
     position: -webkit-sticky; /*Safari*/
     position: sticky;
     top: 0;
+    z-index: 10;
+  }
+
+  .repo-nav > a {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .repo-nav-icons {
+    display: none;
   }
 
   .repo-nav-img-container {

@@ -90,4 +90,12 @@
   .repo-meta-data p {
     width: 80%;
   }
+
+  .repo-info-list {
+    flex-wrap: wrap;
+  }
+
+  .repo-info-list > * {
+    margin-right: 12px;
+  }
 }

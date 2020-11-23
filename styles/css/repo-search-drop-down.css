@@ -53,6 +53,19 @@
 
 @media only screen and (max-width: 768px) {
   .repo-search-bar-drop-down {
+    position: fixed;
+    top: 30vh;
+    right: 10vw;
+    z-index: 30000;
+  }
+  .repo-search-bar-drop-down::before {
+    position: fixed;
+    content: "";
+    background-color: rgba(247, 247, 247, 0.384);
+    width: 100vw;
+    height: 100vh;
     left: 0;
+    top: 0px;
+    z-index: -1;
   }
 }
