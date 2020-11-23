@@ -112,6 +112,7 @@
               />
             </g>
           </svg>
+          <!-- Drop down contents -->
           <div id="hide-drop-down-1" class="drop-down hide-drop-down">
             <a>New repository</a> <a>Import repository</a> <a>New gist</a
             ><a>New organization</a> <a>New project</a>
@@ -217,7 +218,7 @@
             name="myRepoSearchText"
           />
           <!-- buttons -->
-          <button>
+          <button id="search-bar-drop-down-btn-1">
             Type: All
             <span
               ><img
@@ -225,8 +226,36 @@
                 alt="icon"
                 class="search-icons"
             /></span>
+            <!--  -->
+            <!-- Drop down contents -->
+            <div
+              id="repo-search-bar-drop-down-1"
+              class="repo-search-bar-drop-down hide-repo-search-bar-drop-down"
+            >
+              <div>
+                <span>Select type</span>
+                <span
+                  ><img
+                    src="assets/svg/cross.svg"
+                    alt="icon"
+                    class="search-drop-down-icons"
+                /></span>
+              </div>
+              <span
+                ><span
+                  ><img
+                    src="assets/svg/tick.svg"
+                    alt="icon"
+                    class="search-drop-down-icons-1" /></span
+                ><span>All</span></span
+              >
+              <a>Public</a><a>Private</a> <a>Source</a><a>Forks</a
+              ><a>Archived</a><a>Mirrors</a>
+            </div>
+            <!--  -->
+            <!--  -->
           </button>
-          <button>
+          <button id="search-bar-drop-down-btn-2">
             Language: All
             <span
               ><img
@@ -234,6 +263,34 @@
                 alt="icon"
                 class="search-icons"
             /></span>
+            <!--  -->
+            <!-- Drop down contents -->
+            <div
+              id="repo-search-bar-drop-down-2"
+              class="repo-search-bar-drop-down hide-repo-search-bar-drop-down"
+            >
+              <div>
+                <span>Select language</span>
+                <span
+                  ><img
+                    src="assets/svg/cross.svg"
+                    alt="icon"
+                    class="search-drop-down-icons"
+                /></span>
+              </div>
+              <span
+                ><span
+                  ><img
+                    src="assets/svg/tick.svg"
+                    alt="icon"
+                    class="search-drop-down-icons-1" /></span
+                ><span>css</span></span
+              >
+              <a>TypeScript</a> <a>JavaScript</a><a>HTML</a>
+              <a>Jupyter Notebook</a><a>Python</a><a>Makefile</a>
+            </div>
+            <!--  -->
+            <!--  -->
           </button>
           <button>
             <span

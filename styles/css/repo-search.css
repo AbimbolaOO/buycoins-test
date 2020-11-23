@@ -16,12 +16,14 @@
 }
 
 .repo-search-container button {
+  position: relative;
   background-color: #fafbfc;
   transition: background-color 0.2s ease-in;
 }
 
 .repo-search-container button:hover {
   background-color: #ebeef0;
+  cursor: pointer;
 }
 
 .repo-search-container button:last-child {
