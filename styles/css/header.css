@@ -84,7 +84,7 @@ input.search {
   background-image: url("../../assets/svg/download.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 242px 2px;
+  background-position: right 6px top 2px;
   background-size: 20px;
 }
 
