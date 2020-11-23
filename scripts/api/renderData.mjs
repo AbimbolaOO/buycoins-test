@@ -49,7 +49,7 @@ export async function renderData() {
     mode: "cors",
     method: "POST",
     headers: {
-      "Access-Control-Allow-Origin": "*",
+      // "Access-Control-Allow-Origin": "*",
       "Content-Type": "application/json",
       Authorization: "bearer " + githubData.token,
     },
