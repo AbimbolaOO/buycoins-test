@@ -28,45 +28,38 @@ export function repoTileView({
           <ul class="repo-info-list">
             ${renderElements(
               primaryLanguage,
-              `<li><div class="color-code" style="background-color:${colorPicker(
-                returnValue(primaryLanguage)
-              )}"></div></li>
+              `<li><div class="color-code" style="background-color:${colorPicker()}">
+              </div></li>
             <li>${returnValue(primaryLanguage)}</li>`
             )}
 
             ${renderElements(
               isFork,
               `<li>
-              <span
-                ><img
+              <span><img
                   src="assets/svg/fork.svg"
                   alt="icon"
-                  class="repo-info-icons" /></span
-              >${forkCount}
+                  class="repo-info-icons" /></span>${forkCount}
             </li>`
             )}
 
             ${renderElements(
               stargazerCount,
               `<li>
-              <span
-                ><img
+              <span><img
                   src="assets/svg/star.svg"
                   alt="icon"
-                  class="repo-info-icons" /></span
-              >${stargazerCount}
+                  class="repo-info-icons" /></span>${stargazerCount}
             </li>`
             )}
 
             ${renderElements(
               licenseInfo,
               `<li>
-              <span
-                ><img
+              <span><img
                   src="assets/svg/balance.svg"
                   alt="icon"
-                  class="repo-info-icons" /></span
-              >${returnValue(licenseInfo)}
+                  class="repo-info-icons" /></span>${returnValue(licenseInfo)}
             </li>`
             )}
             
@@ -77,12 +70,10 @@ export function repoTileView({
       <div class="star-and-activity">
         <!-- Star button -->
         <button>
-          <span
-            ><img
+          <span><img
               src="assets/svg/star.svg"
               alt="icon"
-              class="star-icons" /></span
-          >star
+              class="star-icons" /></span>star
         </button>
       </div>
     </section>
