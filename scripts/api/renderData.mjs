@@ -10,8 +10,8 @@ profile.className = "profile";
 
 // You can modify the object below if you would like to display your own repo data
 const githubData = {
-  token: "e94e3d231890131a9495c9790c927f30437018e1",
-  userName: "AbimbolaOO",
+  token: "Please put your own token it would work",
+  userName: "Please put you user name it would work",
 };
 
 const query = graphqlQuery(githubData.userName);

@@ -8,13 +8,10 @@
 
 .footer-list {
   display: flex;
-  /* border: 2px solid magenta; */
   flex: 1;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* text-align: center;
-  align-content: center; */
 }
 
 .footer-icon {
@@ -29,7 +26,6 @@
 }
 
 .footer-list li {
-  /* border: 2px solid red; */
   display: flex;
   padding-right: 5.2%;
 }
