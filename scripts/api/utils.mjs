@@ -124,7 +124,7 @@ export function colorPicker(language) {
       color = "#427819";
       break;
     default:
-      color = "#ffffff";
+      color = "#000000";
   }
   return color;
 }

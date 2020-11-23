@@ -28,7 +28,9 @@ export function repoTileView({
           <ul class="repo-info-list">
             ${renderElements(
               primaryLanguage,
-              `<li><div class="color-code" style="background-color:${colorPicker()}">
+              `<li><div class="color-code" style="background-color:${colorPicker(
+                returnValue(primaryLanguage)
+              )}">
               </div></li>
             <li>${returnValue(primaryLanguage)}</li>`
             )}
