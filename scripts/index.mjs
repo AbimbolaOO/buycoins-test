@@ -1,4 +1,4 @@
-import { repoNav, dropDown } from "./animation/index.mjs";
+import { repoNav, dropDown, changeText } from "./animation/index.mjs";
 import { renderData } from "./api/index.mjs";
 renderData().catch((err) => console.log(err));
 repoNav();
@@ -15,3 +15,5 @@ dropDown(
   "repo-search-bar-drop-down-2",
   "hide-repo-search-bar-drop-down"
 );
+
+changeText();
