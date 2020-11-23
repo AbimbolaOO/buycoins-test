@@ -27,6 +27,10 @@ See an example of what the final result should look like [https://res.cloudinary
 
 The code in this repository is my attempt at the challenge.
 
+## Solution URL
+
+[https://dazzling-snyder-0d9456.netlify.app/](https://dazzling-snyder-0d9456.netlify.app/)
+
 ## How run my code
 
 Open the renderData.mjs file and replace the token and username with your and you are good togo.
