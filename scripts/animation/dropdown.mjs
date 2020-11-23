@@ -1,13 +1,13 @@
-export function dropDown(hideHeaderIcon, hideDropDown) {
-  const headerIcon = document.getElementById(`${hideHeaderIcon}`);
-  const iconDropDown = document.getElementById(`${hideDropDown}`);
-  headerIcon.addEventListener("click", function () {
-    iconDropDown.classList.toggle("hide-drop-down");
+export function dropDown(bottonID, dropDownID, hideDropDownClass) {
+  const clickObj = document.getElementById(`${bottonID}`);
+  const dropDownContent = document.getElementById(`${dropDownID}`);
+  clickObj.addEventListener("click", function (e) {
+    dropDownContent.classList.toggle(`${hideDropDownClass}`);
   });
   window.addEventListener("click", function (e) {
-    if (!e.target.matches(`#${hideHeaderIcon}`)) {
-      if (!iconDropDown.classList.contains("hide-drop-down")) {
-        iconDropDown.classList.add("hide-drop-down");
+    if (!e.target.matches(`#${bottonID}`)) {
+      if (!dropDownContent.classList.contains(`${hideDropDownClass}`)) {
+        dropDownContent.classList.toggle(`${hideDropDownClass}`);
       }
     }
   });
