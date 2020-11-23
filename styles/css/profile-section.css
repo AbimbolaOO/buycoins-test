@@ -131,6 +131,7 @@
     flex: 1;
     padding: 0 16px;
     position: relative;
+    margin-top: 32px;
   }
 
   .profile-img-container {
@@ -150,10 +151,10 @@
   .focusing-container {
     position: absolute;
     left: 83%;
-    top: 6.5%;
+    top: 6.6%;
     background-color: white;
     border-radius: 20px;
-    padding: 8px 0px 8px 6px;
+    padding: 6px 0px 8px 6px;
     align-items: center;
   }
 

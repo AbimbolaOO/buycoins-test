@@ -1,8 +1,8 @@
 export function repoNav() {
   window.addEventListener("scroll", function (e) {
     if (
-      document.body.scrollTop > 106 ||
-      document.documentElement.scrollTop > 106
+      document.body.scrollTop > 80 ||
+      document.documentElement.scrollTop > 80
     ) {
       document.getElementById("repo-nav").classList.add("sticky-nav");
     } else {
